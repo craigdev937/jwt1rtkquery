@@ -1,0 +1,40 @@
+{
+  "name": "jwt1rtkquery",
+  "version": "1.0.0",
+  "description": "Initial setup of the project.  Created with Express, Type Modules, MongoDB, React, Vite, Redux-Toolkit/RTK Query, and React Router.",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": "16.x",
+    "npm": "8.x"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indigomx9/jwt1rtkquery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/indigomx9/jwt1rtkquery/issues"
+  },
+  "homepage": "https://github.com/indigomx9/jwt1rtkquery#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "helmet": "^5.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.8",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
+
+
