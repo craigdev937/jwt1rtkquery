@@ -1,8 +1,12 @@
 import express from "express";
-import { IndexHome } from "../controllers/UserCon.js";
+import { auth } from "../middleware/Auth.js";
+import { USER } from "../controllers/UserCon.js";
 
 export const UserRt = express.Router();
-    UserRt.get("/", IndexHome);
+    UserRt.post("/register", USER.Register);
+    UserRt.get("/", USER.FetchAll);
+    UserRt.post("/login", USER.Login);
+    UserRt.delete("/logout", auth, USER.Logout);
 
 
 
